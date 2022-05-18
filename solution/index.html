@@ -35,26 +35,11 @@
                     <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
                 </div>
                 <div class="card-body">
-                    
-                    <!-- change to "Kevin Howard" -->
-                        <h1 id="user">Jane Doe</h1> 
-                    
-
-                    <!-- change to "Mark Anderson"
-                    <h1 id="user">Jane Doe</h1>
-                    -->
-
+                    <h1>Jane Doe</h1>
                     <h3><img src="icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
-
                     <p>Developer | Engineer | Problem Solver<br>
                     Master of shadows and the Internet!</p>
-                    
-                    <!-- change to "Kevin Howard" -->
-                        <p onclick="edit()"><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p> 
-                    
-                    <!-- change to "Mark Anderson"
-                    <p><a href="#" onclick="edit('user')"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
-                    -->
+                    <p><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
                 </div>
             </div>
 
@@ -78,30 +63,28 @@
             <!-- connection requests card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">2</span>
+                    <span class="badge" id="requests">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item" id="post-1">
+                    <li class="card-list-item" id="request-1">
                         <span>
                             <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
                             Todd E
                         </span>
                         <span>
-                            <!-- multiple onclicks -->
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="request(0); accept('connectionCount')">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="request(0)">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept('#request-1')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="ignore('#request-1')">
                         </span>
                     </li>
-                    <li class="card-list-item" id="post-2">
+                    <li class="card-list-item" id="request-2">
                         <span>
                             <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
                             Phil E
                         </span>
                         <span>
-                            <!-- multiple onclicks -->
-                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="request(1); accept('connectionCount')">
-                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="request(1)">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="accept('#request-2')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="ignore('#request-2')">
                         </span>
                     </li>
                 </ul>
@@ -110,7 +93,7 @@
             <!-- your connections card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge" id="connectionCount">418</span>
+                    <span class="badge" id="connections">498</span>
                     <h3>Your Connections</h3>
                 </div>
                 <ul class="card-list">
